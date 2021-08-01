@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.home,
+.services,
+.contact-us,
+.sign-up,
+.interior-designing,
+.construction,
+.surveying {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.services,
+.interior-designing,
+.construction,
+.surveying {
+  background-image: url("/images/img-2.jpg");
+  background-position: center;
+  height: 400px;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.contact-us {
+  background-image: url("/images/img-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url("/images/img-8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+/* simple - enter transition 300ms, exit 150ms */
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+.coming-soon {
+  text-align: center;
+  margin: 200px;
+}
+
+.coming-soon h1 {
+  text-align: center;
+  /* margin: 200px; */
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+.coming-soon h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 300px;
+}
+
+.coming-soon i {
+  font-size: 100px;
+  margin-bottom: 50px;
+}
